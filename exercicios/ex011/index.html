@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Tente abrir essa imagem em vários dispositivos ou simplesmente diminua o tamanho do seu navegador.
+    </p>
+<picture>
+    <source media="(max-width: 700px)" srcset="imagens/P.png" type="image/png">
+    <source media="(max-width: 1000px)" srcset="imagens/M.png" type="image/png">
+    <img src="imagens/G.png" alt="imagem flexível">
+</picture>
+<h1>Reproduzindo áudios</h1>
+<p>Vamos aprender a reproduzir áudios no HTML5</p>
+<audio src="media/The Strokes - Why Are Sundays So Depressing (Official Audio).mp3" controls autoplay></audio> <!--MP3 WAV OGG - tipos de áudios compatíveis-->
+
+<h2>Outra Forma</h2>
+<audio preload="auto" autoplay controls loop>
+    <source src="media/The Strokes - Why Are Sundays So Depressing (Official Audio).mp3" type="audio/mpeg">
+   
+    <source src="media/The Strokes - Why Are Sundays So Depressing (Official Audio).mp3" type="audio/ogg">
+   
+    <source src="media/The Strokes - Why Are Sundays So Depressing (Official Audio).mp3" type="audio/wav">
+    Não foi possível carregar esse áudio, <a href="https://www.youtube.com/watch?v=2KSpDNlsVF4">clique aqui </a>para baixar o arquivo
+</audio>
+</body>
+</html>

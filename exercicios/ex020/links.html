@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial{
+            background-color:  rgb(119, 238, 151);
+        }
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            color: darkgray;
+            font-weight: normal;
+        }
+        a::before{
+            content: '★';
+            color: gray;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <H1>Personalizando Links</H1>
+    <ul>
+        <li><a href="https://www.instagram.com/brunomaatias/" target="_blank" rel="external">Página do Insta</a></li>
+        <li><a href="https://twitter.com/brunomatias__" target="_blank" rel="external">Página do Twitter</a></li>
+        <li><a href="https://www.youtube.com/watch?v=q24gsxF_8fU" class="especial" target="_blank" rel="external">Música Youtube</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+:root{
+    --cor0: #F2CF1D;
+    --cor1: #F2AE2E;
+    --cor2: #F27830;
+    --cor3: #D93636;
+    --cor4: #8C2B2B;
+
+    --fonte-titulo: "Anton", sans-serif;
+    --fonte-padrao: 'Roboto Condensed', 'sans-serif';
+} 
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(240, 240, 126);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    padding: 50px;
+    text-align: center;
+    
+}
+
+header > h1{
+    color: rgb(255, 221, 0);
+    font-family: var(--fonte-titulo);
+    font-size: 6em;
+    font-weight: 300;
+}
+
+header > p{
+    color: var(--cor1);
+    padding: 20px;
+    font-size: 25px;
+    font-family: 'roboto';
+    font-weight: bold;
+}
+
+nav{
+    background-color: var(--cor3);
+    padding: 6px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.495);
+}
+
+nav > a{   
+    padding-right: 15px;
+    margin: 10px;
+    text-decoration: none;
+    color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+}
+nav > a:hover{
+    color: var(--cor3);
+    background-color: var(--cor0);
+    padding: 8px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+    max-width: 840px;
+    min-width: 320px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.536);
+    font-family: var(--fonte-padrao)
+}
+
+main h1{
+    
+    color: var(--cor2);
+    padding: 3px;
+    font-family: var(--fonte-titulo);
+    font-weight: 200;
+    font-size: 30px;
+}
+main p{
+    padding: 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 1.01em;
+    line-height: 2em;
+}
+main a{
+    color: #ffa200;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover{
+    color: var(--cor2);
+    text-decoration: underline;
+}
+main a::after{
+   content: '\1F517';
+}
+
+main h2{
+    color: var(--cor2);
+    padding: 3px;
+    padding-top: 50px;
+    font-family: var(--fonte-titulo);
+    font-weight: 200;
+    
+}
+
+main h3{
+    color: var(--cor2);
+    padding: 5px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-family: var(--fonte-titulo);
+    font-weight: 200;
+}
+main img{
+    width: 100%;
+}
+
+main img.membros{
+    display: block;
+    padding-top: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+main img.albuns{
+    display: block;
+    padding: 20px;
+    width: 30%;
+    margin: auto;
+}
+
+main img.pequena{
+    max-width: 350;
+    display: block;
+    margin: auto;
+}
+
+strong{
+    color: #ffa200;
+}
+
+aside > ol{
+    padding-bottom: 30px;
+    list-style-position: inside;
+}
+
+footer{
+    background-color: #8C2B2B;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav > a{
+            text-decoration: none;
+            margin-right: 30px;
+            
+            
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        nav{
+            padding: 5px;
+            background-color: darkgray;
+            box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.561);
+            width: 270px;
+        }
+        main{
+            background-color: white;
+            display: block;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 0px 30px;
+            box-shadow: 6px 6px 4px 1px rgba(0, 0, 0, 0.465);
+        }
+        footer{
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 8px;
+            margin: 0px;
+            text-align: center;
+        }
+        section#noticias{
+            background-color: darkgray;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        section#esportes{
+            background-color: darkgray;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <H1>Titulo 1</H1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>      
+        </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <h2>Noticias</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis culpa rerum accusantium obcaecati eaque dolore pariatur! Possimus accusantium expedita, fugiat, commodi est quaerat, quasi totam modi nulla adipisci quod iure!</p>
+        </section>
+        <section id="esportes">
+            <h2>Esportes</h2>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aliquid tempora nobis delectus, quidem accusamus voluptas distinctio blanditiis vel adipisci dolor enim saepe aspernatur totam aperiam optio provident, sit sapiente!
+                <aside>Jose Brito</aside>
+            </article>
+        </section>
+    </main>
+    <footer>Desenvolvidio por Bruno Matias</footer>
+</body>
+</html>
