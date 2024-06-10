@@ -17,6 +17,8 @@
     --cor5: #063d1e;
 
     --fonte-android: 'Android', 'cursive';
+    --fonte-padrao: 'Arial', 'Verdana', 'Helvetica', 'sans-serif';
+    --fonte-destaque: 'Bebas Neue','cursive'
 }
 
 *{
@@ -26,7 +28,7 @@
 
 body {
     background-color: var(--cor0); 
-    font-family: var(--fonte-padrão);
+    font-family: var(--fonte-padrao);
 }
 a.externo:after{
     content: '\1F517';
