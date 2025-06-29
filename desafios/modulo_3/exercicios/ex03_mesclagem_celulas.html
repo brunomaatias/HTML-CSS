@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Células</title>
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            background-color: lightskyblue;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 2px 2px 10px black;
+        }
+
+        td {
+            border: 1px solid black;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            /* Alinhamento horizontal */
+            vertical-align: middle;
+            /* Alinhamento vertical */
+            padding: 8px;
+        }
+
+        td:hover {
+            background-color: #F50037;
+            transition: 0.2s;
+            font-size: 18px;
+        }
+
+        .linhaAzul {
+            background-color: lightskyblue;
+        }
+
+        .linhaCinza {
+            background-color: gray;
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            color: white;
+            background-color: black;
+            width: 40%;
+            margin: auto;
+            margin-bottom: 6px;
+            margin-top: 6px;
+            border-radius: 5px;
+        }
+
+        div {
+            margin: auto;
+        }
+
+        caption {
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            background-color: rgb(0, 162, 255);
+            box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.458);
+            ;
+            padding: 25px;
+            width: 1100px;
+            margin: auto;
+            margin-bottom: 0px;
+            margin-top: 6px;
+            border-radius: 5px 5px 0px 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <table>
+
+        <caption>Mesclagem de Células</caption>
+
+        <tr class="linhaAzul">
+            <td>A</td>
+            <td colspan="2">B</td> 
+        </tr>
+
+        <tr class="linhaCinza">
+            <td>D</td>
+            <td rowspan="2">E</td>
+            <td>F</td>
+        </tr>
+
+        <tr>
+            <td>G</td> 
+            <td>I</td>
+        </tr>
+    </table>
+</body>
+
+</html>
