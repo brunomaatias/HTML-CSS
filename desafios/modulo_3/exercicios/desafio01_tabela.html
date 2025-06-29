@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+</head>
+
+<style>
+    body {
+        padding: 0px;
+        margin: 0px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: auto;
+        background-color: lightskyblue;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 2px 2px 10px black;
+    }
+
+    td {
+        border: 1px solid black;
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        /* Alinhamento horizontal */
+        vertical-align: middle;
+        /* Alinhamento vertical */
+        padding: 8px;
+    }
+
+    td:hover {
+        background-color: #F50037;
+        transition: 0.2s;
+        font-size: 18px;
+    }
+
+    .linhaAzul {
+        background-color: lightskyblue;
+    }
+
+    .linhaCinza {
+        background-color: gray;
+    }
+
+    h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        color: white;
+        background-color: black;
+        width: 40%;
+        margin: auto;
+        margin-bottom: 6px;
+        margin-top: 6px;
+        border-radius: 5px;
+    }
+
+    div { 
+        margin: auto;
+    }
+</style>
+
+<body>
+    <div>
+        <h1>Desafio 1</h1>
+
+        <table>
+            <tr class="linhaAzul"> <!--Linha-->
+                <td>1</td> <!--Dado da Linha-->
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+
+            <tr class="linhaCinza">
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+
+            <tr class="linhaAzul">
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+
+            <tr class="linhaCinza">
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+
+            <tr class="linhaAzul">
+                <td>13</td>
+                <td>14</td>
+                <td>15</td> 
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
