@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Músicas Em Alta</title>
+</head>
+
+<style>
+    body {
+        padding: 0px;
+        margin: 0px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: auto;
+        background-color: lightskyblue;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 2px 2px 10px black;
+    }
+
+    td {
+        border: 1px solid black;
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        /* Alinhamento horizontal */
+        vertical-align: middle;
+        /* Alinhamento vertical */
+        padding: 8px;
+    }
+
+    td:hover {
+        background-color: #F50037;
+        transition: 0.2s;
+        font-size: 18px;
+    }
+
+    .linhaAzul {
+        background-color: lightskyblue;
+    }
+
+    .linhaCinza {
+        background-color: gray;
+    }
+
+    h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        color: white;
+        background-color: black;
+        width: 40%;
+        margin: auto;
+        margin-bottom: 6px;
+        margin-top: 6px;
+        border-radius: 5px;
+    }
+
+    div { 
+        margin: auto;
+    }
+</style>
+
+<body>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela
+
+    -->
+    <div>
+        <h1>Tabela Simples</h1>
+
+        <table>
+            <tr class="linhaAzul"> <!--Linha-->
+                <td>A1</td> <!--Dado da Linha-->
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+
+            <tr class="linhaCinza">
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+
+            <tr class="linhaAzul">
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+
+            <tr class="linhaCinza">
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
